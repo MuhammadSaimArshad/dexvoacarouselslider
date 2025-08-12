@@ -1,7 +1,7 @@
 name: dexvoacarouselslider
 description: "A Flutter Widget for carousel slider ."
 version: 0.0.1
-homepage:
+homepage: https://github.com/MuhammadSaimArshad/dexvoacarouselslider
 
 environment:
   sdk: ^3.6.1
