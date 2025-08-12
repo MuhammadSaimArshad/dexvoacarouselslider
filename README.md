@@ -1,39 +1,57 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# carousel_slider
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A Dexvoa Carousel Slider widget.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+## Features 
+ 
+* Custom Image
+* Auto play
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Supported platforms
 
-## Features
+* Flutter Android
+* Flutter iOS
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Add `cdexvoacarouselslider: ^0.0.1` to your `pubspec.yaml` dependencies. And import it:
 
 ```dart
-const like = 'sample';
+import 'package:dexvoacarouselslider/dexvoacarouselslider.dart';
 ```
 
-## Additional information
+## How to use
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Simply create a `Dexvoa Carousel Slider` widget, and pass the required params:
+
+```dart
+class DexvoaCarouselSlider extends StatefulWidget {
+  const DexvoaCarouselSlider({super.key});
+
+  @override
+  State<DexvoaCarouselSlider> createState() => _DexvoaCarouselSliderState();
+}
+
+class _DexvoaCarouselSliderState extends State<DexvoaCarouselSlider> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.amber,
+        title: Text("Dexvoa Carousel Slider"),
+        centerTitle: true,
+      ),
+      body: Column(
+        children: [
+          Dexvoacarouselslider(),
+        ],
+      ),
+    );
+  }
+}
+
+```
+
+
+
