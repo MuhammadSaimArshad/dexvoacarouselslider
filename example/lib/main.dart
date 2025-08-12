@@ -12,19 +12,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: DexvoaCarouselSlider(),
     );
   }
 }
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class DexvoaCarouselSlider extends StatefulWidget {
+  const DexvoaCarouselSlider({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<DexvoaCarouselSlider> createState() => _DexvoaCarouselSliderState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _DexvoaCarouselSliderState extends State<DexvoaCarouselSlider> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
