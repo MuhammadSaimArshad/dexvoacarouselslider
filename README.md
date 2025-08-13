@@ -26,19 +26,38 @@ import 'package:dexvoacarouselslider/dexvoacarouselslider.dart';
 Simply create a `Dexvoa Carousel Slider` widget, and pass the required params:
 
 ```dart
-class DexvoaCarouselSlider extends StatefulWidget {
-  const DexvoaCarouselSlider({super.key});
+import 'package:dexvoacarouselslider/dexvoacarouselslider.dart';
+import 'package:flutter/material.dart';
 
-  @override
-  State<DexvoaCarouselSlider> createState() => _DexvoaCarouselSliderState();
+void main() {
+  runApp(const MyApp());
 }
 
-class _DexvoaCarouselSliderState extends State<DexvoaCarouselSlider> {
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.blue,
         title: Text("Dexvoa Carousel Slider"),
         centerTitle: true,
       ),
