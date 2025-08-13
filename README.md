@@ -1,4 +1,4 @@
-# carousel_slider
+# dexvoacarouselslider
 
 A Dexvoa Carousel Slider widget.
 
@@ -26,9 +26,18 @@ import 'package:dexvoacarouselslider/dexvoacarouselslider.dart';
 Simply create a `Dexvoa Carousel Slider` widget, and pass the required params:
 
 ```dart
+<<<<<<< HEAD
 import 'package:dexvoacarouselslider/dexvoacarouselslider.dart';
 import 'package:flutter/material.dart';
 
+=======
+
+
+
+import 'package:dexvoacarouselslider/dexvoacarouselslider.dart';
+import 'package:flutter/material.dart';
+
+>>>>>>> 845b2948349e34830f9dfb794f48a08433567d89
 void main() {
   runApp(const MyApp());
 }
