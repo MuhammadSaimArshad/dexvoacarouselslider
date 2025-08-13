@@ -12,24 +12,24 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DexvoaCarouselSlider(),
+      home: HomePage(),
     );
   }
 }
 
-class DexvoaCarouselSlider extends StatefulWidget {
-  const DexvoaCarouselSlider({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<DexvoaCarouselSlider> createState() => _DexvoaCarouselSliderState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _DexvoaCarouselSliderState extends State<DexvoaCarouselSlider> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.blue,
         title: Text("Dexvoa Carousel Slider"),
         centerTitle: true,
       ),
